@@ -2,3 +2,17 @@
 .nuestros{
     display: block;
 }
+
+
+
+.spacer-15{
+    padding-left:  30px;
+
+}
+img{
+    margin:50px;
+}
+h2{
+    padding-left: 450px;
+    margin: 50px;
+}

@@ -13,7 +13,7 @@ export class AppComponent {
   title = 'lmb-front';
   formUsuario = [];
 
-  constructor(private serv: QuestionService, private peticion:PeticionService) {
+  constructor(private serv: QuestionService, private peticion: PeticionService) {
     this.formUsuario = serv.getUsuarioForm();
   }
   peticioCrearUsuario(arg) {
