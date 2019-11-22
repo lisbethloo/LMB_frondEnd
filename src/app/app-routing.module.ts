@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {  NavbarHomeComponent } from './components/home/navbar-home/navbar-home.component';
+import { NavbarHomeComponent } from './components/home/navbar-home/navbar-home.component';
 import { HomepageComponent } from './components/home/homepage/homepage.component';
 import { NosotrosComponent } from './components/home/nosotros/nosotros.component';
 import { ServiciosComponent } from './components/home/servicios/servicios.component';
@@ -27,7 +27,11 @@ const routes: Routes = [
         path: 'Trabajos',
         component: TrabajosComponent,
       },
-     {
+      {
+        path: 'Servicios',
+        component: ServiciosComponent
+      },
+      {
         path: 'footer',
         component: FooterComponent,
       }

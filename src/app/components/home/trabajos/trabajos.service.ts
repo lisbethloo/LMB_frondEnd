@@ -16,17 +16,17 @@ export class TrabajosService {
   product: any;
   onPublicacionChanged: BehaviorSubject<any>;
   constructor(
-      // tslint:disable-next-line: variable-name
-      private _httpClient: HttpClient,
-      // private _authService: AuthService
+    // tslint:disable-next-line: variable-name
+    private _httpClient: HttpClient,
+    // private _authService: AuthService
   ) {
-      // Set the defaults
-      this.onPublicacionChanged = new BehaviorSubject({});
+    // Set the defaults
+    this.onPublicacionChanged = new BehaviorSubject({});
   }
 
 
-  getPublicaciones() {
-    return this._httpClient.get(environment.apiBaseUrl + '/publicacion');
+  getTrabajos() {
+    return this._httpClient.get(environment.apiBaseUrl + '/trabajos');
   }
 
 }

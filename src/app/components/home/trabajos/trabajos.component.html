@@ -3,17 +3,17 @@
 <div class="container">
 
   <div class="card-columns">
-    <div class="card" *ngFor="let publicacion of publicaciones" >
-      <img [src]="publicacion.img" class="card-img-top" alt="...">
+    <div class="card" *ngFor="let trabajo of trabajos">
+      <img [src]="trabajo.img" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">{{publicacion.titulo}}</h5>
-        <p class="card-text">{{publicacion.cuerpo}}</p>
+        <h5 class="card-title">{{trabajo.titulo}}</h5>
+        <p class="card-text">{{trabajo.descripcion}}</p>
       </div>
       <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
+        <small class="text-muted">Ultima Actualizacion {{trabajo.updatedAt}}</small>
+      </div>
     </div>
-    </div>
-    
+
   </div>
 
 </div>

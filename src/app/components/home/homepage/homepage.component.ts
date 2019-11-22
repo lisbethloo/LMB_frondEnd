@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TrabajosService } from '../trabajos/trabajos.service';
 
 @Component({
   selector: 'app-homepage',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
-
-  constructor() { }
+  trabajo: any;
+  constructor(private trabajos: TrabajosService) { }
 
   ngOnInit() {
+    this.getTrabajos();
   }
+
+  getTrabajos() {
+    this.trabajos.getTrabajos().subscribe(
+      res => this.trabajo = res,
+      err => console.log(err)
+    );
+  }
+
 
 }

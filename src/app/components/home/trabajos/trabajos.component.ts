@@ -7,22 +7,22 @@ import { TrabajosService } from './trabajos.service';
   styleUrls: ['./trabajos.component.scss']
 })
 export class TrabajosComponent implements OnInit {
-  publicaciones: any = [];
+  trabajos: any = [];
   constructor(private trabajosService: TrabajosService) { }
 
   ngOnInit() {
-    this.getPublicacion();
+    this.getTrabajos();
   }
 
-  getPublicacion() {
-      this.trabajosService.getPublicaciones().subscribe(
-        data => {
-          this.publicaciones = data;
-          console.log(this.publicaciones);
-        },
-        err => {
-          console.error(err);
-        });
+  getTrabajos() {
+    this.trabajosService.getTrabajos().subscribe(
+      data => {
+        this.trabajos = data;
+        console.log(this.trabajos);
+      },
+      err => {
+        console.error(err);
+      });
 
   }
 }
