@@ -27,6 +27,10 @@ const routes: Routes = [
         path: 'Trabajos',
         component: TrabajosComponent,
       },
+      {
+        path: 'Servicios',
+        component: ServiciosComponent,
+      },
      {
         path: 'footer',
         component: FooterComponent,

@@ -1,12 +1,20 @@
-<mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
-    <mdb-carousel-item>
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" height=400 width=400 alt="First slide">
-    </mdb-carousel-item>
-    <mdb-carousel-item>
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" height= 400 width= 400 alt="Second slide">
-    </mdb-carousel-item>
-    <mdb-carousel-item>
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" height=400 width=400 alt="Third slide">
-    </mdb-carousel-item>
-  </mdb-carousel>
+<br>
+<br>
+<div class="container">
+
+  <div class="card-columns">
+    <div class="card" *ngFor="let publicacion of publicaciones" >
+      <img [src]="publicacion.img" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{publicacion.titulo}}</h5>
+        <p class="card-text">{{publicacion.cuerpo}}</p>
+      </div>
+      <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+    </div>
+    
+  </div>
+
+</div>
   

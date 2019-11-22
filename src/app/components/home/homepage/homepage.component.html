@@ -45,39 +45,48 @@
                     <br/> <br/>
                     <h4>SOMOS CREATIVIDAD</h4>
                     <div class="spacer-15"></div>
-                    <p>Somos una empresa virtual donde brindamos de (marketing/publicidad/multi/media/diseño web)donde contrataras freelancers dependiendo de tu necesidad.
-                    <p>Poder contar con una pagina donde el usuario pueda darles publicidad y mejor presentación a las empresas de sus productos de una manera confiable y eficaz, de modo que la empresa o persona solo tendrá que contactar un medio para manejar su publicidad.</p>
+                    <p class="lead">Somos una empresa virtual donde brindamos de (marketing/publicidad/multi/media/diseño web)donde contrataras freelancers dependiendo de tu necesidad.
+                    <p class="lead">Poder contar con una pagina donde el usuario pueda darles publicidad y mejor presentación a las empresas de sus productos de una manera confiable y eficaz, de modo que la empresa o persona solo tendrá que contactar un medio para manejar su publicidad.</p>
                 </div>
                 <!--Nuestros trabajos-->
                
-                <div class="spacer-15"></div>
-                <section id="about" class="wow fadeIn ptb ptb-sm-80">
-                        <div class="container">
-                            <div class="row text-center">
-                                <div class="col-md-8 offset-md-2">
-                                        <div class="spacer-18"></div>
-                                        <div class="spacer-18"></div>
-                                        <div class="spacer-18"></div>
-                                        <br/> <br/>
-                                        <br/> <br/>
-                                        <br/> <br/>
-                                        <br/> <br/>
+                <br>
+                <br>
+                <h1>Nuestros Trabajos</h1>
+                <div class="container">
+                
+                  <div class="card-columns">
+                    <div class="card">
+                      <img [src]="" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"></p>
+                      </div>
+                      <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                    </div>
+                    
+                  </div>
+                
+                </div>
+                <!--Servicios-->
+                <h2>Servicios</h2>
+                <div class="container">
 
-                                        <div class="spacer-15"></div>
-                                        <section id="about" class="wow fadeIn ptb ptb-sm-80">
-                                                <div class="container">
-                                                    <div class="row text-center">
-                                                        <div class="col-md-8 offset-md-2">
-                                                                <div class="spacer-18"></div>
-                                                                <div class="spacer-18"></div>
-                                                                <div class="spacer-18"></div>
-                                                        <div class= "spacer-18">
-                                                        </div>
-                                                        <br/> <br/>
-                                                        <br/> <br/>
-                                                        <br/> <br/>
-                                                            
-                                       
-                                     
-                                   
-              
+  <div class="card-columns">
+    <div class="card" *ngFor="let publicacion of publicaciones" >
+      <img [src]="publicacion.img" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{publicacion.titulo}}</h5>
+        <p class="card-text">{{publicacion.cuerpo}}</p>
+      </div>
+      <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+    </div>
+    
+  </div>
+
+</div>
+  
